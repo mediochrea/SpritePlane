@@ -29,7 +29,7 @@ function translateActiveLayer( deltaX, deltaY )
         executeAction( charIDToTypeID('move'), desc, DialogModes.NO );
 };
 
-var inp = confirm("Welcome to SpritePlane v1.0!\r\rSelect mode:\rYes - automatic mode (optimal number of rows/columns).\rNo - manual mode (user-specified number of rows/columns).");
+var inp = confirm("Welcome to SpritePlane v1.0!\r\rSelect layout mode:\rYes - automatic mode (optimal number of rows/columns).\rNo - manual mode (user-specified number of rows/columns).");
 if (inp==true)
 {
     rows = Math.round (Math.sqrt (layerNum));
@@ -38,10 +38,10 @@ if (inp==true)
 
 else
 {
-    columns = prompt ("Enter the number of columns:","1");
+    columns = prompt ("Enter the number of columns (1 or more):","1");
     rows = prompt ("Enter the number of rows ("+Math.ceil (layerNum / columns)+" or more recommended):",""+Math.ceil (layerNum / columns)+"");
 };
-var inp = confirm("The sprites will be arranged in "+columns+" columns and "+rows+" rows.\rThe sprite sheet will be "+columns*docWidth+" wide and "+rows*docHeight+" tall. \r\rContinue?");
+var inp = confirm("The sprite frames will be arranged in "+columns+" columns and "+rows+" rows.\rThe sprite sheet will be "+columns*docWidth+" wide and "+rows*docHeight+" tall. \r\rContinue?");
 if (inp==true)
 {
     app.activeDocument.resizeCanvas(docWidth*columns, docHeight*rows, AnchorPosition.TOPLEFT);
