@@ -20,6 +20,11 @@ development, and improve your sprite workflow.
 Questions? Issues? Requests? Found a bug? Just thanks? Hit me up right here in [Issues](https://github.com/mediochrea/SpritePlane/issues), 
 by [email](mailto:mediochrea@gmail.com), or on [Polycount](http://www.polycount.com/forum/member.php?u=48535).
 
+Tested on:
+
+* Adobe Photoshop CS5 x86-32
+* Adobe Photoshop CS5 x86-64
+
 Features
 --------
 
@@ -56,6 +61,7 @@ FAQ
 Future plans
 ------------
 
+* Less restrictions, more exceptions
 * Alpha channel (indirect transparency) support
 * Proper GUI, with a more user-friendly look
 * More poka-yoke
