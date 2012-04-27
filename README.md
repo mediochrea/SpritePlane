@@ -61,6 +61,7 @@ FAQ
 Future plans
 ------------
 
+* The reverse (sprite sheet to animated sprite) functionality
 * Less restrictions, more exceptions
 * Alpha channel (indirect transparency) support
 * Proper GUI, with a more user-friendly look
