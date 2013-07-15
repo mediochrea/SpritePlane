@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Spriteplane by mediochrea</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Spriteplane</h1>
+        <p>A sprite sheet generator script for Adobe Photoshop</p>
+
+        <p class="view"><a href="https://github.com/mediochrea/SpritePlane">View the Project on GitHub <small>mediochrea/SpritePlane</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/mediochrea/SpritePlane/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/mediochrea/SpritePlane/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/mediochrea/SpritePlane">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a name="welcome-to-spriteplane-v10" class="anchor" href="#welcome-to-spriteplane-v10"><span class="octicon octicon-link"></span></a>Welcome to SpritePlane v1.0!</h1>
+
+<h2>
+<a name="about" class="anchor" href="#about"><span class="octicon octicon-link"></span></a>About</h2>
+
+<p><strong>SpritePlane</strong> is a sprite sheet generator script for Adobe Photoshop that relieves you from many monotonous and 
+time-consuming tasks, such as manually dragging and aligning sprite frames, and makes the generation of sprite sheets 
+a matter of seconds.</p>
+
+<p>So basically what it does is it converts <img src="http://i.imgur.com/c2MEB.gif" alt="Sprites" title="Sprites"> 
+to <img src="http://i.imgur.com/FDHsu.png" alt="Sprite sheets" title="Sprite sheets">.</p>
+
+<p>I'm an aspiring video game artist, and while working on my latest project me and my team felt the need of an automated
+solution to generating sprite sheets. Most of the scripts we found online were either stand-alone, with external library
+dependencies, or lacked the features we were looking for. And so I've decided to develop a script for Photoshop, the tool
+we're using in our development, and then release it to the public. I sincerely hope that our script will aid you in your 
+development, and improve your sprite workflow.</p>
+
+<p>Questions? Issues? Requests? Found a bug? Just thanks? Hit me up right here in <a href="https://github.com/mediochrea/SpritePlane/issues">Issues</a>, 
+by <a href="mailto:mediochrea@gmail.com">email</a>, or on <a href="http://www.polycount.com/forum/member.php?u=48535">Polycount</a>.</p>
+
+<p>Tested on:</p>
+
+<ul>
+<li>Adobe Photoshop CS5 x86-32</li>
+<li>Adobe Photoshop CS5 x86-64</li>
+</ul><h2>
+<a name="features" class="anchor" href="#features"><span class="octicon octicon-link"></span></a>Features</h2>
+
+<ul>
+<li>Fast, simple workflow via the automation of repetetive tasks</li>
+<li>Two layout planning modes: automatic and manual</li>
+<li>Support for direct Photoshop transparency</li>
+</ul><h2>
+<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<ol>
+<li> Close Photoshop.</li>
+<li> Copy the <em>SpritePlane.jsx</em> file to:
+
+<ul>
+<li>Windows: <em>C:\Program Files\Adobe\your_photoshop_version\Presets\Scripts</em>
+</li>
+<li>Mac: <em>Applications &gt; Your Photoshop Version &gt; Presets &gt; Scripts</em>
+</li>
+</ul>
+</li>
+<li> Open Photoshop.</li>
+<li> The script should now be accessible from the <em>File &gt; Scripts</em> menu.</li>
+</ol><h2>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<ol>
+<li> Open your sprite in Photoshop (imported animated gifs work perfectly and without any tweaks).</li>
+<li> The structure of your document must follow several guidelines:
+
+<ul>
+<li>There must be no background layer or locked layers.</li>
+<li>The layers must be arranged in a way that the first frame of your sprite is on Layer 1, the second — on Layer 2 and so on.</li>
+<li>Layers with applied styles, masks or adjustments must be rasterized or converted to smart objects (rasterization works best).</li>
+</ul>
+</li>
+<li> Run the script from the <em>File &gt; Scripts</em> menu or from the actual <em>SpritePlane.jsx</em> file.</li>
+<li> Follow the helpful dialogues to generate the sprite sheet.</li>
+</ol><h2>
+<a name="faq" class="anchor" href="#faq"><span class="octicon octicon-link"></span></a>FAQ</h2>
+
+<ul>
+<li>Nothing here. <em>Yet...</em>
+</li>
+</ul><h2>
+<a name="future-plans" class="anchor" href="#future-plans"><span class="octicon octicon-link"></span></a>Future plans</h2>
+
+<ul>
+<li>The reverse (sprite sheet to animated sprite) functionality</li>
+<li>Less restrictions, more exceptions</li>
+<li>Alpha channel (indirect transparency) support</li>
+<li>Proper GUI, with a more user-friendly look</li>
+<li>More poka-yoke</li>
+<li>Even more useful features, like instant saving, loading multiple images etc.</li>
+<li>Cleaner code with more comments</li>
+<li>A web interface, maybe?</li>
+</ul><h2>
+<a name="version-history" class="anchor" href="#version-history"><span class="octicon octicon-link"></span></a>Version history</h2>
+
+<table>
+<tr>
+<th>Version</th>
+<th>Date</th>
+<th>Notes</th>
+  </tr>
+<tr>
+<td>1.0</td>
+<td>27.04.2012</td>
+<td>Initial release.</td>
+  </tr>
+</table><h2>
+<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h2>
+
+<p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img alt="Creative Commons License" src="http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png"></a><br>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/mediochrea">mediochrea</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-42474277-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
